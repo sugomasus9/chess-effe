@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6902071b3e5862c4aa1c39befebfa8bf
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 114739
+  packageName: 'Chess Set : Chess Boards & Chess Pieces'
+  packageVersion: 3.0
+  assetPath: Assets/Chessboard/Materials/Sky_HDRI.mat
+  uploadId: 720111

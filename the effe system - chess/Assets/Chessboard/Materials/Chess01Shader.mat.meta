@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 00d8f9a8a118f804881886a41571fc85
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 114739
+  packageName: 'Chess Set : Chess Boards & Chess Pieces'
+  packageVersion: 3.0
+  assetPath: Assets/Chessboard/Materials/Chess01Shader.mat
+  uploadId: 720111

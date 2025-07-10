@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fbb7a3ee60eb47749b455f0c21490038
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 114739
+  packageName: 'Chess Set : Chess Boards & Chess Pieces'
+  packageVersion: 3.0
+  assetPath: Assets/Chessboard/Prefabs/ChessBoard01.prefab
+  uploadId: 720111

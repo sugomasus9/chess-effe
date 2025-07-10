@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7c1b234c020f5a64587d631035bbc71e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 114739
+  packageName: 'Chess Set : Chess Boards & Chess Pieces'
+  packageVersion: 3.0
+  assetPath: Assets/Chessboard/DemoScene/Chessboard/GlobalVolumeProfile.asset
+  uploadId: 720111
