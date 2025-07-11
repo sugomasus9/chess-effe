@@ -17,7 +17,8 @@ public class NewMonoBehaviourScript1 : MonoBehaviour
     }
     private void Update()
     {
-        if (!currentCamera)
+        
+            if (!currentCamera)
         {
             currentCamera = Camera.main;
             return;
@@ -25,33 +26,33 @@ public class NewMonoBehaviourScript1 : MonoBehaviour
 
         RaycastHit info;
         Ray ray = currentCamera.ScreenPointToRay(Input.mousePosition);
+        
         if (Physics.Raycast(ray, out info, 100, LayerMask.GetMask("Tile", "Hover")))
         {
             // Get the indexes of the tile i've hit
             Vector2Int hitPosition = LookupTileIndex(info.transform.gameObject);
 
             // If we're hovering a tile after not hovering any tile
-            if (currentHover == -Vector2Int.one)
+            if (currentHover != hitPosition)
             {
-                currentHover = hitPosition;
-                tiles[hitPosition.x, hitPosition.y].layer = LayerMask.NameToLayer("Hover");
-            }
+                //remove hover effect from the previous tile
+               if (currentHover != -Vector2Int.one)
+                {
+                    tiles[currentHover.x, currentHover.y].layer = LayerMask.NameToLayer("Tile");
+                }
 
-            // If we were alredy hovering a tile , change the previous one
-            if (currentHover != -Vector2Int.one)
-            {
-                tiles[currentHover.x, currentHover.y].layer = LayerMask.NameToLayer("Tile");
+                //apply hover effect to the current tile
                 currentHover = hitPosition;
                 tiles[hitPosition.x, hitPosition.y].layer = LayerMask.NameToLayer("Hover");
             }
         }
         else
         {
-            // If we were hovering a tile, change the previous one
+            // If not hovering over any tile, remove hover effect
             if (currentHover != -Vector2Int.one)
             {
                 tiles[currentHover.x, currentHover.y].layer = LayerMask.NameToLayer("Tile");
-                currentHover = -Vector2Int.one; // Reset hover
+                currentHover = -Vector2Int.one;
             }
         }
     }
