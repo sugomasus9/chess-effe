@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f1bc9fa97341d8b45aa824f06543d0d8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 114739
+  packageName: 'Chess Set : Chess Boards & Chess Pieces'
+  packageVersion: 3.0
+  assetPath: Assets/Chessboard/Materials/Pavement.mat
+  uploadId: 720111

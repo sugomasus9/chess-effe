@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1c0b90d1108d3a042b10e993bd615e9e
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 114739
+  packageName: 'Chess Set : Chess Boards & Chess Pieces'
+  packageVersion: 3.0
+  assetPath: Assets/Chessboard/DemoScene/Chessboard.unity
+  uploadId: 720111
