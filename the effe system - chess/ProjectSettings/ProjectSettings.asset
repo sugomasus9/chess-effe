@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 1e4b2f0b332aba04ca8379cd1368889c
+  productGUID: 062597c03cda9924db8663917d89186e
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: prova
+  productName: the effe system - chess
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -676,14 +676,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: prova
+  metroPackageName: the effe system - chess
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: prova
+  metroApplicationDescription: the effe system - chess
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -755,10 +755,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: e9ca3ae5-8965-4a04-ae22-de8d87352ca5
+  cloudProjectId: cbe0347d-cc9a-4369-af3f-8a708bdeb6d9
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: prova
+  projectName: the effe system - chess 2025-07-15_10-58-54
   organizationId: matteocazzola999
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

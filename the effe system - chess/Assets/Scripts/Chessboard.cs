@@ -1,6 +1,7 @@
+using TreeEditor;
 using UnityEngine;
 
-public class NewMonoBehaviourScript1 : MonoBehaviour
+public class Chessboard : MonoBehaviour
 {
     [Header("Art stuff")]
     [SerializeField] private Material tileMaterial;
@@ -11,14 +12,15 @@ public class NewMonoBehaviourScript1 : MonoBehaviour
     private GameObject[,] tiles;
     private Camera currentCamera;
     private Vector2Int currentHover;
+
     private void Awake()
     {
         GenerateAllTiles(1, TILE_COUNT_X, TILE_COUNT_Y);
     }
+
     private void Update()
     {
-        
-            if (!currentCamera)
+        if (!currentCamera)
         {
             currentCamera = Camera.main;
             return;
@@ -26,17 +28,16 @@ public class NewMonoBehaviourScript1 : MonoBehaviour
 
         RaycastHit info;
         Ray ray = currentCamera.ScreenPointToRay(Input.mousePosition);
-        
         if (Physics.Raycast(ray, out info, 100, LayerMask.GetMask("Tile", "Hover")))
         {
             // Get the indexes of the tile i've hit
             Vector2Int hitPosition = LookupTileIndex(info.transform.gameObject);
-
+            
             // If we're hovering a tile after not hovering any tile
             if (currentHover != hitPosition)
             {
                 //remove hover effect from the previous tile
-               if (currentHover != -Vector2Int.one)
+                if (currentHover != -Vector2Int.one)
                 {
                     tiles[currentHover.x, currentHover.y].layer = LayerMask.NameToLayer("Tile");
                 }
@@ -56,7 +57,7 @@ public class NewMonoBehaviourScript1 : MonoBehaviour
             }
         }
     }
-
+    
     // Generate the board
     private void GenerateAllTiles(float tileSize, int tileCountX, int tileCountY)
     {
@@ -65,7 +66,6 @@ public class NewMonoBehaviourScript1 : MonoBehaviour
             for (int y = 0; y < tileCountY; y++)
                 tiles[x, y] = GenerateSingleTile(tileSize, x, y);
     }
-
     private GameObject GenerateSingleTile(float tileSize, int x, int y)
     {
         GameObject tileObject = new GameObject(string.Format("X:{0}, Y:{1}", x, y));
@@ -73,7 +73,7 @@ public class NewMonoBehaviourScript1 : MonoBehaviour
 
         Mesh mesh = new Mesh();
         tileObject.AddComponent<MeshFilter>().mesh = mesh;
-        tileObject.AddComponent<MeshRenderer>().material = tileMaterial;
+        tileObject.AddComponent<MeshRenderer>().material = tileMaterial; 
 
         Vector3[] vertices = new Vector3[4];
         vertices[0] = new Vector3(x * tileSize, 0, y * tileSize);
@@ -92,7 +92,6 @@ public class NewMonoBehaviourScript1 : MonoBehaviour
 
         return tileObject;
     }
-
     // Operations
     private Vector2Int LookupTileIndex(GameObject hitinfo)
     {
@@ -105,3 +104,5 @@ public class NewMonoBehaviourScript1 : MonoBehaviour
     }
 
 }
+
+
