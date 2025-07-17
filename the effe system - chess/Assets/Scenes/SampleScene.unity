@@ -210,13 +210,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.48545268, y: 0.46644986, z: 0.034584537, w: 0.7386232}
+  m_LocalPosition: {x: 0, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 136.775, y: 262.626, z: 223.759}
 --- !u!114 &705507996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,7 +408,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7675292538745599394, guid: 611c247e47241204c8b34a4fdd8d06a0, type: 3}
       propertyPath: m_Name
-      value: ChessBoard02
+      value: ChessBoard
       objectReference: {fileID: 0}
     - target: {fileID: 7774077615573231546, guid: 611c247e47241204c8b34a4fdd8d06a0, type: 3}
       propertyPath: m_LocalPosition.x
